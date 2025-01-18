@@ -2,6 +2,10 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
+void change(vector<int> &a)
+{
+    a[0] = 100;
+}
 int main()
 {
 
@@ -10,18 +14,17 @@ int main()
     v.push_back(4);
     v.push_back(2);
     v.push_back(6);
-    //  v.at(2)=50;
-    //  cout<<v.at(2);
+
     for (int i = 0; i < v.size(); i++)
     {
-        cout << v.at(i) << " ";
+        cout << v[i] << " ";
     }
-    cout<<endl;
-    // sort
+    cout << endl;
+    change(v);
     sort(v.begin(), v.end());
-     for (int i = 0; i < v.size(); i++)
+    for (int i = 0; i < v.size(); i++)
     {
-        cout << v.at(i) << " ";
+        cout << v[i] << " ";
     }
-    cout<<endl; 
+    cout << endl;
 }
