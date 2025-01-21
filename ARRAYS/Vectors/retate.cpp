@@ -40,5 +40,5 @@ int main()
     reversePart(0, n - k - 1, v);
     reversePart(n - k, n - 1, v);
     reversePart(0, n - 1, v);
-    display(v);
+    display(v);   
 }
